@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
-    <title>Student management system</title>
+    <title>Système de gestion des étudiant(e)s</title>
 </head>
 <body>
 @include("navbar")
@@ -18,7 +18,7 @@
 
 <div class="row header-container justify-content-center">
     <div class="header">
-        <h1>Student Management System</h1>
+        <h1>ystème de gestion des étudiant(e)s</h1>
     </div>
 </div>
 
@@ -41,9 +41,9 @@
             <section class="col-md-5">
 
                 <div class="card mb-3">
-                    <img src="https://marketplace.canva.com/MAB7yqsko0c/1/screen_2x/canva-smart-little-schoolgirl--MAB7yqsko0c.jpg" class="card-img-top" alt="...">
+                    <img src="C:\Talend\TOS_DI-Win32-20200219_1130-V7.3.1\download.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Enter the informations of the new student</h5>
+                        <h5 class="card-title">Entrer les informations du nouveau étudiant(de la nouvelle étudiante)</h5>
                         <form action="{{ url('/store') }}" method="post">
                             @csrf
                             <div class="form-group">
@@ -51,26 +51,26 @@
                                 <input name="cne" type="text" class="form-control"  placeholder="Enter cne">
                             </div>
                             <div class="form-group">
-                                <label>First Name</label>
-                                <input name="firstName" type="text" class="form-control"  placeholder="Enter the first name">
+                                <label>Prénom</label>
+                                <input name="prenom" type="text" class="form-control"  placeholder="Entrer le prénom">
                             </div>
 
                             
                             <div class="form-group">
-                                <label>second Name</label>
-                                <input name="secondName" type="text" class="form-control"  placeholder="Enter second name">
+                                <label>Nom</label>
+                                <input name="nom" type="text" class="form-control"  placeholder="Entrer le nom">
                             </div>
                             
                             <div class="form-group">
                                 <label>Age</label>
-                                <input name="age" type="text" class="form-control"  placeholder="Enter the Age">
+                                <input name="age" type="text" class="form-control"  placeholder="Entrer l'age">
                             </div>
                             <div class="form-group">
-                                <label>Speciality</label>
-                                <input name="speciality" type="text" class="form-control"  placeholder="Enter Sepeciality">
+                                <label>Specialité</label>
+                                <input name="specialite" type="text" class="form-control"  placeholder="Entrer la Spécialité">
                             </div>
-                            <input type="submit" class="btn btn-info" value="Save">
-                            <input type="reset" class="btn btn-warning" value="Reset">
+                            <input type="submit" class="btn btn-info" value="Sauvegarde">
+                            <input type="reset" class="btn btn-warning" value="Mise à zéro">
 
                         </form>
                     </div>
